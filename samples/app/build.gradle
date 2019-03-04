@@ -74,10 +74,10 @@ dependencies {
     implementation dependency.design
     implementation dependency.okHttpInterceptor
 
-    debugCompile dependency.leakCanary
-    releaseCompile dependency.leakCanaryNoOp
+    debugImplementation dependency.leakCanary
+    releaseImplementation dependency.leakCanaryNoOp
 
-    androidTestCompile dependency.spoon
-    androidTestCompile dependency.espresso
-    androidTestCompile dependency.androidTestingSupport
+    androidTestImplementation dependency.spoon
+    androidTestImplementation dependency.espresso
+    androidTestImplementation dependency.androidTestingSupport
 }
