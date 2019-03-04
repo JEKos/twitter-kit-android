@@ -17,6 +17,7 @@
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/tw__TweetFillWidth"
     tools:parentTag="RelativeLayout">
 
@@ -33,21 +34,22 @@
             style="@style/tw__TweetBadge" />
     </com.twitter.sdk.android.tweetui.internal.AspectRatioFrameLayout>
 
-    <TextView
+    <androidx.emoji.widget.EmojiTextView
         android:id="@+id/tw__tweet_retweeted_by"
         android:layout_below="@id/tw__aspect_ratio_media_container"
         style="@style/tw__TweetRetweetedBy"
         tools:text="Retweeted by Jack"
         tools:visibility="visible"/>
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         tools:ignore="ContentDescription"
         android:id="@+id/tw__tweet_author_avatar"
+        app:civ_border_width="0dp"
         style="@style/tw__TweetAvatar"
         android:layout_below="@id/tw__tweet_retweeted_by"
         tools:src="#CCCCCC"/>
 
-    <TextView
+    <androidx.emoji.widget.EmojiTextView
         android:id="@+id/tw__tweet_author_full_name"
         style="@style/tw__TweetFullName"
         android:layout_below="@id/tw__tweet_retweeted_by"
@@ -83,7 +85,7 @@
         android:layout_toEndOf="@id/tw__tweet_author_screen_name"
         tools:text="• 03/21/2006"/>
 
-    <TextView
+    <androidx.emoji.widget.EmojiTextView
         android:id="@+id/tw__tweet_text"
         style="@style/tw__TweetText"
         android:layout_below="@id/tw__tweet_author_avatar"

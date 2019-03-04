@@ -45,6 +45,8 @@ ext {
             okHttpInterceptor          : 'com.squareup.okhttp3:logging-interceptor:3.8.0',
             design                     : 'com.google.android.material:material:1.0.0',
             tweetText                  : 'com.twitter:twitter-text:1.14.7',
-            recyclerview               : 'androidx.recyclerview:recyclerview:1.0.0'
+            recyclerview               : 'androidx.recyclerview:recyclerview:1.0.0',
+            supportEmoji               : 'androidx.emoji:emoji:1.0.0',
+            circleImage                : 'de.hdodenhof:circleimageview:3.0.0'
     ]
 }

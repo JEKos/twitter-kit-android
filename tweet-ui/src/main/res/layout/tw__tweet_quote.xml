@@ -40,7 +40,7 @@
             tools:text="\@jack" />
     </LinearLayout>
 
-    <TextView
+    <androidx.emoji.widget.EmojiTextView
         android:id="@+id/tw__tweet_text"
         style="@style/tw__TweetText.Quote"
         android:layout_alignParentEnd="true"

@@ -96,6 +96,8 @@ dependencies {
     implementation dependency.supportCoreV4
     implementation dependency.supportCompatV4
     implementation dependency.recyclerview
+    implementation dependency.supportEmoji
+    implementation dependency.circleImage
 
     androidTestCompile dependency.retrofitMock
     androidTestCompile dependency.mockito
